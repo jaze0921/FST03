@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Forms</title>
+</head>
+    <body>
+        <!--  Form is used to collect user input -->
+        <h1>Creating Forms</h1>
+        <form action="">
+            <div>
+                <!-- Name -->
+                <label for="fullname-id">Name:</label> 
+                 <input 
+                    type="text" 
+                    name="user-fullname" 
+                    id="fullname-id" 
+                    placeholder="Felipe Maglangtuta"
+                    required
+                  />
+            </div>
+
+            <div>
+                <!-- Email -->
+                <label for="fullname-id">Email:</label> 
+                 <input type="email" 
+                     name="user-email"
+                     id="email-id"
+                     placeholder="felipe.maglangtuta@gmail.com"
+                     required
+                 />
+            </div>
+
+            <div>
+                <!-- Password -->
+                <label for="fullname-id">Password:</label> 
+                 <input type="password" 
+                    name="user-password"
+                    id="password-id"
+                     placeholder="****************"
+                     required
+                 />
+            </div>
+
+            <div>
+                <!-- Number -->
+                <label for="Age">Age:</label>
+                <input type="number" 
+                    name="user-age" 
+                    id="age-user"
+                    placeholder="30"
+                    required
+                    min="18"
+                    max="100"
+                />
+            </div>
+
+            <div>
+                <!-- Message -->
+                <label for="message-id">Message:</label>
+                <br />
+                <textarea 
+                    name="user-message" 
+                    id="message-id" cols="30" 
+                    rows="5"
+                    placeholder="What's on your mind?"
+                    ></textarea> 
+            </div>
+
+            <div>
+                <!-- Drop down list -->
+                <select name="user-id" id="gender-id">
+                    <option value="" selected disabled hidden>--- Select your Gender ---</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+
+            <div>
+                <!-- One: limited number of choices -->
+                <input 
+                    type="radio" 
+                    name="profile-status"
+                    id="public-id" 
+                    value="public"
+                />
+                <label for="">Public</label>
+                <input 
+                    type="radio" 
+                    name="profile-status"
+                    id="private-id" 
+                    value="private"
+                />
+                <label for="">Private</label>
+            </div>
+
+            <div>
+                <!-- Zero or more option -->
+                <input 
+                    type="checkbox"
+                    name="genre"
+                    id="Thriller-id"
+                    value="thriller"
+                />
+                <label for="anime-id">Thriller</label>
+
+                <input 
+                    type="checkbox"
+                    name="genre"
+                    id="anime-id"
+                    value="anime"
+                />
+                <label for="anime-id">Anime</label>
+
+                <input 
+                    type="checkbox"
+                    name="genre"
+                    id="psychological-horror-id"
+                    value="psychological-horror"
+                />
+                <label for="psychological-horror-id">Psychological Horror</label>
+
+                <input 
+                    type="checkbox"
+                    name="genre"
+                    id="action-id"
+                    value="acion"
+                />
+                <label for="action-id">Action</label>
+                
+                 <input 
+                    type="checkbox"
+                    name="genre"
+                    id="sci-fi-id"
+                    value="sci-fi"
+                />
+                <label for="sci-fi-id">Sci-Fi</label>
+                
+
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
